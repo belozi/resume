@@ -1,0 +1,154 @@
+
+/*
+Stylesheet for my resume website.
+Robert Belozi Lee
+robert.belozi.lee@gmail.com
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 100%;
+  font-family: Calibri, sans-serif;
+}
+
+html {
+  font-size: 1em;
+}
+
+/* links */
+
+a:link {
+  text-decoration: none;
+  color: #3366cc;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #3fff10;
+  font-weight: bold;
+}
+
+a:visited {
+  color: #0059ff;
+  text-decoration: none;
+}
+
+a:active {
+  color: #0000000;
+  text-decoration: line-through;
+}
+
+/* headings */
+
+h1 {
+  color: #14273D;
+}
+
+h2, h3, h4, h5, h6 {
+  color: #14273D;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2.0em;
+}
+
+/* page layout */
+
+p {
+  font-size: 1.2em;
+  margin: 10px;
+}
+
+ul li {
+  margin-left: 15px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* navigation bar*/
+
+ul#bar li {
+  float: left;
+  padding-right: 10px;
+}
+
+ul#bar li a {
+  display: block;
+}
+
+/*social media buttons*/
+
+table {
+  padding-left: 0;
+  width: 400px;
+  text-align: center;
+}
+
+/*sections*/
+
+div {
+  padding: 18px;
+  background: #ffffff;
+  width: 600px;
+  /*margin: 5px;*/
+}
+.section {
+  float: right;
+  width: 670px;
+  ul li {
+    list-style-type: none;
+  }
+}
+/* Pages */
+
+.skills {
+  width: 700px;
+  height: 650px;
+  overflow: auto;
+  float: right;
+}
+
+.extra {
+  width: 650px;
+  height: 776px;
+  text-align: center;
+  margin: 10px;
+  overflow:auto;
+  margin: auto;
+  float: right;
+}
+
+#card {
+  float: left;
+  width: 400px;
+  height: 650px;
+  margin-left: 300px;
+}
+
+#letter {
+  width: 700px;
+  height: 776px;
+  align-content: center;
+  float: right;
+  overflow:hidden;
+}
+
+/* cover letter */
+
+.cl {
+
+}
+
+#section .bullets {
+  list-style-type: circle;
+
+}
