@@ -15,11 +15,13 @@ by Robert Belozi Lee
 
   <body background='img/image006.png'>
     <nav>
-      <ul id="bar">
-        <li><a href="/cover_letter">Cover Letter</li>
-        <li><a href="/">Resume</a></li>
-        <li><a href="/extras">Extras</a></li>
-      </ul>
+      <select name="options" onchange="window.location.href=this.value;">
+        <option value="">Navigation</option>
+        <option value="/cover_letter">Cover Letter</option>
+        <option value="/">Resume</option>
+        <option value="/extras">Extras</option>
+      </select>
+    </nav>
     </nav>
     <div class="extra">
       <div>

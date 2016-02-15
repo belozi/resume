@@ -19,6 +19,11 @@ html {
   font-size: 1em;
 }
 
+nav {
+  float: right;
+  padding-left: 10px;
+}
+
 /* links */
 
 a:link {
