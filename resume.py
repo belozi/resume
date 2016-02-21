@@ -3,6 +3,8 @@ import webapp2
 resume = open('resume.html').read()
 extras = open('extras.html').read()
 cover_letter = open('cover_letter.html').read()
+apps = open('apps.html').read()
+work_exp = open('work_experience.html').read()
 
 class MainPage(webapp2.RequestHandler):
 
@@ -22,8 +24,25 @@ class CoverLetter(webapp2.RequestHandler):
         self.response.headers['Content-Type'] = 'text/html'
         self.response.write(cover_letter)
 
+class Apps(webapp2.RequestHandler):
+
+    def get(self):
+        self.response.headers['Content-Type'] = 'text/html'
+        self.response.write(apps)
+
+    def post(self):
+        self.response.out.write("Hit me up!")
+
+class Experience(webapp2.RequestHandler):
+
+    def get(self):
+        self.response.headers['Content-Type'] = 'text/html'
+        self.response.write(work_exp)
+
 app = webapp2.WSGIApplication([
             ('/', MainPage),
             ('/extras', Extras),
             ('/cover_letter', CoverLetter),
+            ('/apps', Apps),
+            ('/experience', Experience),
 ], debug=True)

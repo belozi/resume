@@ -132,6 +132,11 @@ div {
   float: right;
 }
 
+.points {
+  list-style-type: disc;
+  padding: 10px;
+}
+
 #card {
   float: left;
   width: 400px;
@@ -156,4 +161,8 @@ div {
 #section .bullets {
   list-style-type: circle;
 
+}
+
+#jobs, #education {
+  float: left;
 }
