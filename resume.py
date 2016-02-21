@@ -1,4 +1,5 @@
 import webapp2
+import cgi
 
 resume = open('resume.html').read()
 extras = open('extras.html').read()
@@ -31,7 +32,8 @@ class Apps(webapp2.RequestHandler):
         self.response.write(apps)
 
     def post(self):
-        self.response.out.write("Hit me up!")
+        self.response.headers['Content-Type'] = 'text/html'
+        self.response.out.write('You thought something cool was going to happen, didn\'t you? Stay tuned.')
 
 class Experience(webapp2.RequestHandler):
 
