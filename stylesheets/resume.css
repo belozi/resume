@@ -163,6 +163,12 @@ div {
 
 }
 
-#jobs, #education {
+.experience {
   float: left;
+  width: 800px;
+  overflow: auto;
+  p {
+    font-size: .75em;
+  }
+
 }
