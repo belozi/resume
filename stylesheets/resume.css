@@ -113,7 +113,9 @@ div {
     list-style-type: none;
   }
 }
+
 /* Pages */
+
 
 .skills {
   width: 700px;
@@ -152,23 +154,19 @@ div {
   overflow:hidden;
 }
 
-/* cover letter */
-
-.cl {
-
+#experience {
+  background-color: gray
 }
+.exp  {
+  height: 800px;
+  margin-left: 350px;
+  background-color: blue;
+  overflow: auto;
+}
+
+
+/* cover letter */
 
 #section .bullets {
   list-style-type: circle;
-
-}
-
-.experience {
-  float: left;
-  width: 800px;
-  overflow: auto;
-  p {
-    font-size: .75em;
-  }
-
 }
