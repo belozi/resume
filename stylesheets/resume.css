@@ -139,6 +139,10 @@ div {
   padding: 10px;
 }
 
+#apps {
+  background-color: gray;
+}
+
 #card {
   float: left;
   width: 400px;
@@ -160,7 +164,6 @@ div {
 .exp  {
   height: 800px;
   margin-left: 350px;
-  background-color: blue;
   overflow: auto;
 }
 
