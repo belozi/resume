@@ -31,10 +31,6 @@ class Apps(webapp2.RequestHandler):
         self.response.headers['Content-Type'] = 'text/html'
         self.response.write(apps)
 
-    def post(self):
-        self.response.headers['Content-Type'] = 'text/html'
-        self.response.out.write('You thought something cool was going to happen, didn\'t you? Stay tuned.')
-
 class Experience(webapp2.RequestHandler):
 
     def get(self):
