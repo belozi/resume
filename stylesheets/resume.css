@@ -167,7 +167,9 @@ div {
   overflow: auto;
 }
 
-
+#footer {
+  float: right;
+}
 /* cover letter */
 
 #section .bullets {

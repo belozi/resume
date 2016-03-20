@@ -13,3 +13,7 @@ handlers:
 
 - url: /.*
   script: resume.app
+
+libraries:
+- name: jinja2
+  version: latest

@@ -1,5 +1,7 @@
 import webapp2
 import cgi
+import os
+import jinja2
 
 resume = open('resume.html').read()
 extras = open('extras.html').read()
