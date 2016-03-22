@@ -3,27 +3,8 @@ This is the "extras" page.
 by Robert Belozi Lee
 -->
 
-<!DOCTYPE html>
-
-<html>
-  <head>
-    <title>Robert Belozi Lee</title>
-    <link rel="stylesheet" href="stylesheets/resume.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-  </head>
-
-  <body background='img/image006.png'>
-    <nav>
-      <select name="options" onchange="window.location.href=this.value;">
-        <option value="">Navigation</option>
-        <option value="/cover_letter">Cover Letter</option>
-        <option value="/">Resume</option>
-        <option value="/experience">Experience</option>
-        <option value="/extras">Extras</option>
-        <option value="/apps">Apps</option>
-      </select>
-    </nav>
+{% extends "resume.html" %}
+{%block content %}
     <div class="extra">
       <div>
         <h1>Projects, etc.</h1>
@@ -79,5 +60,4 @@ by Robert Belozi Lee
         <a href="/">RESUME</a>
       </div>
     </div>
-  </body>
-</html>
+{% endblock %}

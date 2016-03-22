@@ -7,7 +7,7 @@ by Robert Belozi Lee
 
 <html>
   <head>
-    <title>Robert Belozi Lee</title>
+    <title>{{ title }}</title>
     <link rel="stylesheet" href="stylesheets/resume.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -19,7 +19,7 @@ by Robert Belozi Lee
     <meta name="google-site-verification" content="geDwfBavPjmf7PZ95iVkOPdLMXSZpV9ZU1YOvpSMCZk" />
   </head>
 
-  <body>
+  <body id= {{ tag }} >
     <nav>
       <select name="options" onchange="window.location.href=this.value;">
         <option value="">Navigation</option>
@@ -30,6 +30,8 @@ by Robert Belozi Lee
         <option value="/apps">Apps</option>
       </select>
     </nav>
+
+{% block content %}
     <br>
       <div id="card" align="center">
         <img src="img/profile_mini.png" alt:"Robert Belozi Lee">
@@ -125,8 +127,9 @@ by Robert Belozi Lee
           </p>
         </div>
 
-          <a id'"footer" href="/experience">Experience & Education</a>
+          <a id="footer" href="/experience">Experience & Education</a>
         </div>
       </div>
+{% endblock %}
     </body>
   </html>

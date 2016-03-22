@@ -139,6 +139,13 @@ div {
   padding: 10px;
 }
 
+#cover {
+  background-image: url('/img/image010.png');
+}
+
+#extra {
+  background-image: url('/img/image006.png');
+}
 #apps {
   background-color: gray;
 }

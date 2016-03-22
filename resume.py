@@ -3,41 +3,68 @@ import cgi
 import os
 import jinja2
 
-resume = open('resume.html').read()
-extras = open('extras.html').read()
-cover_letter = open('cover_letter.html').read()
-apps = open('apps.html').read()
-work_exp = open('work_experience.html').read()
+JE = jinja2.Environment(
+    loader = jinja2.FileSystemLoader(os.path.dirname(__file__) + "/templates"))
 
 class MainPage(webapp2.RequestHandler):
 
     def get(self):
-        self.response.headers['Content-Type'] = 'text/html'
-        self.response.write(resume)
+        title = "Robert Belozi Lee"
+        tag = ''
+        template_vars = {
+            'title' : title,
+            'tag' : tag
+        }
+        template = JE.get_template('resume.html')
+        self.response.out.write(template.render(template_vars))
 
 class Extras(webapp2.RequestHandler):
 
     def get(self):
-        self.response.headers['Content-Type'] = 'text/html'
-        self.response.write(extras)
+        title = "Robert Belozi Lee"
+        tag = 'extra'
+        template_vars = {
+            'title' : title,
+            'tag' : tag
+        }
+        template = JE.get_template('extras.html')
+        self.response.out.write(template.render(template_vars))
 
 class CoverLetter(webapp2.RequestHandler):
 
     def get(self):
-        self.response.headers['Content-Type'] = 'text/html'
-        self.response.write(cover_letter)
+        title = "Robert Belozi Lee"
+        tag = 'cover'
+        template_vars = {
+            'title' : title,
+            'tag' : tag
+        }
+        template = JE.get_template('cover_letter.html')
+        self.response.out.write(template.render(template_vars))
 
 class Apps(webapp2.RequestHandler):
 
     def get(self):
-        self.response.headers['Content-Type'] = 'text/html'
-        self.response.write(apps)
+        title = "Robert Belozi Lee"
+        tag = "apps"
+        template_vars = {
+            'title' : title,
+            'tag' : tag
+        }
+        template = JE.get_template('apps.html')
+        self.response.out.write(template.render(template_vars))
 
 class Experience(webapp2.RequestHandler):
 
     def get(self):
-        self.response.headers['Content-Type'] = 'text/html'
-        self.response.write(work_exp)
+        title = "Robert Belozi Lee"
+        tag = "experience"
+        template_vars = {
+            'title' : title,
+            'tag' : tag
+        }
+        template = JE.get_template('work_experience.html')
+        self.response.out.write(template.render(template_vars))
 
 app = webapp2.WSGIApplication([
             ('/', MainPage),
