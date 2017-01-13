@@ -1,0 +1,5 @@
+
+update app
+
+appcfg.py -A rbl-cv update app.yaml --no_cookies
+
